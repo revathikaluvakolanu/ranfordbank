@@ -19,6 +19,7 @@ import com.wipro.ranford.BaseClass;
 public class Repository extends BaseClass{
 	WebDriver driver;
 	SoftAssert softAssert = new SoftAssert();
+	//This method is used to launch the browser\\
 	
 	public void launch()
 	{
@@ -30,6 +31,7 @@ public class Repository extends BaseClass{
 		if(Validation.isTextDisplayed(driver,"Welcome to Personalized Banking"))
 		{
 			Reporter.log("Home page loaded successfully");
+			System.out.println("homepage loaded sucessfully");
 		}
 		else
 		{
